@@ -36,7 +36,7 @@ size_t findFirstAndSec(vector<string> const& text, char ch1, char ch2) {
 		size_t lastOf = x.find_last_of(ch2);
 
 		if (lastOf < firstOf) return string::npos;
-		if (lastOf < firstOf) return 0;
+		if (lastOf == firstOf) return 0;
 
 
 		if (firstOf != string::npos) {
